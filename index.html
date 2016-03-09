@@ -7,6 +7,8 @@
     <title>SNAP | Welcome</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="design/font-awesome-4.5.0/css/font-awesome.min.css">
+  
   </head>
 
 
@@ -26,11 +28,7 @@
 
   <div class="top-bar-right">
     <ul class="menu" data-responsive-menu="drilldown medium-dropdown">
-      <li class="menu-text"><a href="https://github.com/intelsdi-x/snap#overview">Intro</a></li>
-      <li class="menu-text"><a href="https://github.com/intelsdi-x/snap#documentation">Docs</a></li>
-      <li class="menu-text"><a href="https://github.com/intelsdi-x/snap#community-support">Community</a></li>
-      <li class="menu-text"><a href="#">Download</a></li>
-      <li class="menu-text"><a href="https://github.com/intelsdi-x/snap">Github</a></li>
+      <li class="menu-text"><a href="https://github.com/intelsdi-x/snap"><i class="fa fa-github-square fa-lg"></i></a></li>
       <li class="menu-text"><a href="https://gitter.im/intelsdi-x/snap">Gitter</a></li>
     </ul>
   </div>
@@ -41,7 +39,7 @@
 
 <section class = "section-bkg">
   <div class="large-12 columns"> 
-    <img = src="img/cpp_faded_snap03.png">
+    <img = src="img/cpp_faded_snap04_grey.png">
   </div>
 </section>
 
@@ -53,26 +51,42 @@
       <br>
       <h2 class = "center"> A powerful open telemetry framework </h2>
       <br>
-      <h4 class = "center">
-        <small>
-        <ul class = "no-bullet"> 
-          <li> Improve deployment model and flexibility of the telemetry tools ecosystem </li>
-          <li> Provide dynamic control of collection for small or large clusters of systems </li>
-          <li> Allow flexible processing of telemetry data on agent (e.g. machine learning) </li>
-          <li> Simplify disseminating data to telemetry ingesting systems </li>
-          <li> Provide operational innovation for collecting across cluster of machines </li>
-          <li> Support emerging API consumption models </li>
-          <br>
-      </ul></small></h4>
+      <h4 class = "subheader"> We believe the next generation of cloud computing within data centers will achieve higher density, scale, and agility in a highly automated manner. 
+        We call this vision Intelligent Resource Orchestration (IRO) and it all starts with valuable, accurate, and consumable data from the hardware and software.
+        We began our journey asking ourselves “What would an operational framework focused on making the consumption of telemetry much easier look like?”
+        Learn more about <a href="http://nickapedia.com/2015/12/02/what-if-collecting-data-center-telemetry-was-a-snap/">our story</a>.</h4>
     </div>
   </div>
 
-      <div class = "row">
-      <div class="large-12 columns center">
-        <a class="button" href="https://github.com/intelsdi-x/snap#getting-started">get started</a>
-      </div>
-      </div>
-<br>
+  <div class = "row">
+    <div class="large-3 columns">
+      <p> </p>
+    </div>
+    <div class="large-6 columns">
+      <img src="img/iro.png">
+    </div>
+     <div class="large-3 columns">
+      <p> </p>
+    </div>
+  </div>
+
+    
+    <div class = "row">
+    <div class="large-12 columns center">
+    <h3 class = "center"> Snap is designed to:</h3>
+
+      <h4 class = "center subheader">
+        <ul class = "no-bullet"> 
+          <li> Empower systems to expose a consistent set of telemetry data </li>
+          <li> Simplify telemetry ingestion across ubiquitous storage systems </li>
+          <li> Improve the deployment model, packaging and flexibility for collecting telemetry </li>
+          <li> Allow flexible processing of telemetry data on agent (e.g. machine learning) </li>
+          <li> Provide powerful clustered control of telemetry workflows across small or large clusters </li>
+          <br>
+      </ul></h4>
+    </div>
+  </div>
+
 </section> <!-- end overview-->
 <hr />
 
@@ -82,11 +96,11 @@
 
   <div class="row">
     <br>
-      <div class="large-5 columns">
-        <h3>Simplified Workflow
-          <br><small>Achieve a single extensible flow from raw information to valuable automation.</small></h3>
+      <div class="large-6 columns">
+        <h3>Simplified Workflow</h3>
+          <h4 class = "subheader">Achieve a single extensible flow from raw information to valuable automation. Start with data collection at all layers, then transform the data with basic filtering or add information for context, and finish by publishing the processed data to one or more platforms.</h4>
       </div>
-      <div class = "large-7 columns"></div>
+      <div class = "large-6 columns"></div>
   </div>
 
   <div class = "row">
@@ -110,10 +124,10 @@
 
 <div class="row">
   <br>
-    <div class = "large-7 columns"></div>
-      <div class="large-5 columns text-right">
-        <h3>Plugin Architecture 
-          <br><small>Allows users to mix and match functionality based on need using three types of plugins (collectors, processors, and publishers). </small></h3>
+    <div class = "large-6 columns"></div>
+      <div class="large-6 columns text-right">
+        <h3>Plugin Architecture </h3>
+          <h4 class = "subheader">Snap is designed to collect, process, and publish data with a pluggable architecture. Users can mix and match functionality based on need using three types of plugins (collectors, processors, and publishers). </h4>
       </div>
 </div>
 <br>
@@ -126,8 +140,8 @@
           <div class = "large-8 columns">
           <img = src="img/collect.png">
           <h4 class = "center"></h4>
-          <p class = "center">  Collect telemetry data you want </p>
-          </div>
+          <p class = "center"> Collect telemetry data once via plugins </p>
+          </div> 
         <div class = "large-2 columns"> <br> </div>
       </div>
     </div>
@@ -138,7 +152,7 @@
           <div class = "large-8 columns">
           <img = src="img/process.png">
           <h4 class = "center"> </h4>
-          <p class = "center">Filter, alter, or append metadata</p>
+          <p class = "center">Filter, alter, or append metadata as many times as you need via plugins</p>
           </div>
         <div class = "large-2 columns"> <br> </div>
       </div>
@@ -150,7 +164,7 @@
           <div class = "large-8 columns">
           <img = src="img/publish.png">
           <h4 class = "center"></h4>
-          <p class = "center">Publish data as many times as you need</p>
+          <p class = "center">Publish data as many times as you need via plugins</p>
           </div>
         <div class = "large-2 columns"> <br> </div>
       </div>
@@ -163,43 +177,15 @@
 
 
 
-<section class = "scale">
-
-  <div class="row">
-    <br>
-      <div class="large-5 columns">
-        <h3>Scale with Ease
-          <br><small> Cluster configuration management made simple with snap tribe. </small></h3>
-      </div>
-      <div class = "large-7 columns"></div>
-  </div>
-
-  <div class = "row">
-    <div class="large-6 columns">
-          <img = src="img/collage_pic.gif">
-    </div>
-  </div>
-
-</section> <!-- end scale-->
-<hr />
-
-
 <section class = "dynamic_updates">
   <div class="row">
     <br>
-      <div class = "large-7 columns"><p></p></div>
-      <div class="large-5 columns text-right">
-        <h3>Designed to Evolve
-          <br><small> Dynamic updates ensures simple and secure bug fixes, security patching, and improved accuracy in production. </small></h3>
+      <div class="large-8 columns text-left">
+        <h3>Dynamic Control</h3>
+          <h4 class = "subheader"> Dynamic plugin operations means loading, updating, and unloading plugins without restarting snap or extra configuration management.
+While dynamic updates ensures simple and secure bug fixes, security patching, and improved accuracy in production. </h4>
       </div>
-      <div class = "large-7 columns"></div>
-  </div>
-
-  <div class = "row">
-    <div class="large-6 columns"></div>
-    <div class="large-6 columns">
-          <img = src="img/collage_pic.gif">
-    </div>
+      <div class = "large-3 columns"> <img = src="img/snap_catalog.png"></div>
   </div>
 
 </section> <!-- end dynamic_updates -->
@@ -207,10 +193,34 @@
 
 
 
+<section class = "scale">
+
+  <div class="row">
+    <br>
+      <div class = "large-6 columns"></div>
+      <div class="large-6 columns text-right">
+        <h3>Scale with Ease </h3>
+          <h4 class = "subheader"> Use the snap tribe clustering feature to simplify cluster configuration management and scale with less operational cost. </h4>
+      </div>
+
+  </div>
+
+  <div class = "row">
+    <div class="large-7 columns">
+          <img = src="img/scale.png">
+    </div>
+  </div>
+
+</section> <!-- end scale-->
+<br><hr />
+
+
 <section class = "section-links">
+
 <div class = "row">
 
   <div class="large-12 columns center">
+        <br>
         <p> Get Started <a href="https://github.com/intelsdi-x/snap#getting-started">here</a> <p>
         <p> See <a href ="https://github.com/intelsdi-x/snap#documentation">Documentation</a> <p>
         <p> View full list of <a href="https://github.com/intelsdi-x/snap/blob/master/docs/PLUGIN_CATALOG.md">plugins</a> <p>
@@ -240,13 +250,8 @@
     </div>
     <div class="small-12 medium-6 medium-pull-6 columns">
       <p class="logo hide-for-small-only">snap</p> 
-      <p class="footer-links">
-
-      <a href="intro.html">Intro</a>
-      <a href="docs.html">Docs</a>
-      <a href="community.html">Community</a>
-      <a href="#">Download</a>
-      <a href="https://github.com/intelsdi-x/snap">Github</a>
+      <p class="footer-links">     
+      <a href="https://github.com/intelsdi-x/snap"><i class="fa fa-github-square"></i></a>
       <a href="https://gitter.im/intelsdi-x/snap">Gitter</a>
 
       </p>
@@ -260,25 +265,6 @@
 
 
 <style>
-
-
-.button {
-  color: transparent;
-  font-size: 2rem;
-  letter-spacing: 5px;
-  border: 4px solid transparent;
-  border-image: linear-gradient(45deg, pink, skyblue);
-  border-image-slice: 1;
-  background: linear-gradient(45deg, pink, skyblue);
-  -webkit-background-clip: text;
-  text-fill-color: transparent;
-  transition: all 0.2s ease; }
-  .button:hover {
-    border-image: linear-gradient(45deg, skyblue, skyblue);
-    background: linear-gradient(45deg, skyblue, skyblue); 
-}
-
-
 
 .center {
   text-align: center;
