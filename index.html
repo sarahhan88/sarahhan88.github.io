@@ -21,8 +21,6 @@
   <div class="top-bar-left">
     <ul class="dropdown menu" data-dropdown-menu>
       <li class="menu-text"><a href="index.html"></a></li>
-      <li class="menu-text"><a href="index.html">v1</a></li>
-      <li class="menu-text"><a href="v2.html">v2</a></li>  
     </ul>
   </div>
 
@@ -39,7 +37,7 @@
 
 <section class = "section-bkg">
   <div class="large-12 columns"> 
-    <img = src="img/cpp_faded_snap04_grey.png">
+    <img = src="img/cpp_grey_london_between.png">
   </div>
 </section>
 
@@ -51,9 +49,8 @@
       <br>
       <h2 class = "center"> A powerful open telemetry framework </h2>
       <br>
-      <h4 class = "subheader"> We believe the next generation of cloud computing within data centers will achieve higher density, scale, and agility in a highly automated manner. 
-        We call this vision Intelligent Resource Orchestration (IRO) and it all starts with valuable, accurate, and consumable data from the hardware and software.
-        We began our journey asking ourselves “What would an operational framework focused on making the consumption of telemetry much easier look like?”
+      <h4 class = "subheader"> 
+        We have a vision for the next generation of cloud computing we call Intelligent Resource Orchestration (IRO) that achieves higher density, scale, and agility in a highly automated manner. Getting valuable, accurate, and consumable data from the hardware and software is the first step towards IRO, so we began asking ourselves “What would an operational framework focused on making the consumption of telemetry much easier look like?”
         Learn more about <a href="http://nickapedia.com/2015/12/02/what-if-collecting-data-center-telemetry-was-a-snap/">our story</a>.</h4>
     </div>
   </div>
@@ -72,20 +69,22 @@
 
     
     <div class = "row">
-    <div class="large-12 columns center">
-    <h3 class = "center"> Snap is designed to:</h3>
+      <div class="large-1 columns"><p></p></div>
+      <div class="large-10 columns">
+        <h3 class = ""> Snap is designed to:</h3>
 
-      <h4 class = "center subheader">
-        <ul class = "no-bullet"> 
-          <li> Empower systems to expose a consistent set of telemetry data </li>
-          <li> Simplify telemetry ingestion across ubiquitous storage systems </li>
-          <li> Improve the deployment model, packaging and flexibility for collecting telemetry </li>
-          <li> Allow flexible processing of telemetry data on agent (e.g. machine learning) </li>
-          <li> Provide powerful clustered control of telemetry workflows across small or large clusters </li>
-          <br>
-      </ul></h4>
+        <h4 class = "subheader">
+          <ul class = "disc"> 
+            <li> Empower systems to expose a consistent set of telemetry data </li>
+            <li> Simplify telemetry ingestion across ubiquitous storage systems </li>
+            <li> Improve the deployment model, packaging and flexibility for collecting telemetry </li>
+            <li> Allow flexible processing of telemetry data on agent </li>
+            <li> Provide powerful clustered control of telemetry workflows across small or large clusters </li>
+            <br>
+        </ul></h4>
+      </div>
+      <div class="large-1 columns"><p></p></div>
     </div>
-  </div>
 
 </section> <!-- end overview-->
 <hr />
@@ -96,11 +95,11 @@
 
   <div class="row">
     <br>
-      <div class="large-6 columns">
+      <div class="large-10 columns">
         <h3>Simplified Workflow</h3>
-          <h4 class = "subheader">Achieve a single extensible flow from raw information to valuable automation. Start with data collection at all layers, then transform the data with basic filtering or add information for context, and finish by publishing the processed data to one or more platforms.</h4>
+          <h4 class = "subheader">Achieve a single extensible flow starting with data collection at all layers, then transforming the data with basic filtering or adding information for context, and finishing with publishing the processed data to one or more platforms.</h4>
       </div>
-      <div class = "large-6 columns"></div>
+      <div class = "large-2 columns"></div>
   </div>
 
   <div class = "row">
@@ -124,10 +123,10 @@
 
 <div class="row">
   <br>
-    <div class = "large-6 columns"></div>
-      <div class="large-6 columns text-right">
+    <div class = "large-4 columns"></div>
+      <div class="large-8 columns text-right">
         <h3>Plugin Architecture </h3>
-          <h4 class = "subheader">Snap is designed to collect, process, and publish data with a pluggable architecture. Users can mix and match functionality based on need using three types of plugins (collectors, processors, and publishers). </h4>
+          <h4 class = "subheader">Allows users to mix and match functionality based on need using three types of plugins: collectors, processors, and publishers. </h4>
       </div>
 </div>
 <br>
@@ -136,13 +135,12 @@
 
     <div class="large-4 columns">
       <div class = "row">
-        <div class = "large-2 columns"> <br> </div>
+        <div class = "large-4 columns"> <br> </div>
           <div class = "large-8 columns">
+            <h4 class = "center subheader"> Collect</h4>
           <img = src="img/collect.png">
           <h4 class = "center"></h4>
-          <p class = "center"> Collect telemetry data once via plugins </p>
           </div> 
-        <div class = "large-2 columns"> <br> </div>
       </div>
     </div>
 
@@ -150,9 +148,10 @@
       <div class = "row">
         <div class = "large-2 columns"> <br> </div>
           <div class = "large-8 columns">
+            <h4 class = "center subheader">Process</h4>
           <img = src="img/process.png">
           <h4 class = "center"> </h4>
-          <p class = "center">Filter, alter, or append metadata as many times as you need via plugins</p>
+          
           </div>
         <div class = "large-2 columns"> <br> </div>
       </div>
@@ -160,16 +159,65 @@
 
     <div class="large-4 columns">
       <div class = "row">
-        <div class = "large-2 columns"> <br> </div>
           <div class = "large-8 columns">
+            <h4 class = "center subheader">Publish</h4>
           <img = src="img/publish.png">
           <h4 class = "center"></h4>
-          <p class = "center">Publish data as many times as you need via plugins</p>
+          
           </div>
-        <div class = "large-2 columns"> <br> </div>
+        <div class = "large-4 columns"> <br> </div>
       </div>
     </div>
   </div>
+
+<br><br>
+
+
+
+   
+    <div class = "row">
+      <div class="large-10 columns">
+        <h4 class = ""> Collect telemetry data once via plugins for:</h4>
+
+        <h5 class = "subheader">
+          <ul class = "disc"> 
+            <li> Bare metal, including Intel specific platform metrics (Node, DCM, NIC, SMARTS, Ethtool, OSv)</li>
+            <li> Operating Environments and existing telemetry (Docker, libvirt, psutil, Collectd, Heka)</li>
+            <li> Application services and adjacencies (Ceph, HAProxy, Etcd, Facter, MySQL, Apache)</li>
+            <li> Priority services and other third party plugins </li>
+        </ul></h5>
+      </div>
+    </div>
+
+    <div class = "row">
+      <div class="large-10 columns">
+        <h4 class = ""> Filter, alter or append metadata as many times as you need via plugins for:</h4>
+
+        <h5 class = "subheader">
+          <ul class = "disc"> 
+            <li> Filtering (Moving Averages)</li>
+            <li> Normalization </li>
+            <li> Encryption for all or part of the data set</li>
+            <li> Injection of remote requires for tokens </li>
+        </ul></h5>
+      </div>
+    </div>
+
+
+    <div class = "row">
+      <div class="large-10 columns">
+        <h4 class = ""> Publish data as many times as you need via plugins for:</h4>
+
+        <h5 class = "subheader">
+          <ul class = "disc"> 
+            <li> Dashboard Tools  (Graphite, Grafana, Riemann)</li>
+            <li> Queues and Logs (RabbitMQ, Kafka, File)</li>
+            <li> Databases (PostgresSQL, InfluexDB, OpenTSDB, MySQL, HANA)</li>
+        </ul></h5>
+      </div>
+    </div>
+
+
 </section> <!-- end plugins-->
 <hr />
 
@@ -180,10 +228,10 @@
 <section class = "dynamic_updates">
   <div class="row">
     <br>
-      <div class="large-8 columns text-left">
+      <div class="large-9 columns text-left">
         <h3>Dynamic Control</h3>
           <h4 class = "subheader"> Dynamic plugin operations means loading, updating, and unloading plugins without restarting snap or extra configuration management.
-While dynamic updates ensures simple and secure bug fixes, security patching, and improved accuracy in production. </h4>
+Dynamic updates ensures simple and secure bug fixes, security patching, and improved accuracy in production. </h4>
       </div>
       <div class = "large-3 columns"> <img = src="img/snap_catalog.png"></div>
   </div>
@@ -197,40 +245,36 @@ While dynamic updates ensures simple and secure bug fixes, security patching, an
 
   <div class="row">
     <br>
-      <div class = "large-6 columns"></div>
-      <div class="large-6 columns text-right">
+      <div class = "large-5 columns"> <img = src="img/scale.png"></div>
+      <div class="large-7 columns text-right">
         <h3>Scale with Ease </h3>
-          <h4 class = "subheader"> Use the snap tribe clustering feature to simplify cluster configuration management and scale with less operational cost. </h4>
+          <h4 class = "subheader"> The clustering feature tribe simplifies cluster configuration management and enables scale with less operational cost. </h4>
       </div>
 
   </div>
 
   <div class = "row">
     <div class="large-7 columns">
-          <img = src="img/scale.png">
+
     </div>
   </div>
 
 </section> <!-- end scale-->
-<br><hr />
+<br><br>
 
 
 <section class = "section-links">
 
-<div class = "row">
 
-  <div class="large-12 columns center">
-        <br>
-        <p> Get Started <a href="https://github.com/intelsdi-x/snap#getting-started">here</a> <p>
-        <p> See <a href ="https://github.com/intelsdi-x/snap#documentation">Documentation</a> <p>
-        <p> View full list of <a href="https://github.com/intelsdi-x/snap/blob/master/docs/PLUGIN_CATALOG.md">plugins</a> <p>
-        <p> Contact us on <a href="https://gitter.im/intelsdi-x/snap">Gitter</a> <p>        
-  </div>
+      <div class = "row">
+      <div class="large-12 columns center">
+        <a class="button" href="https://github.com/intelsdi-x/snap#getting-started">get started with snap</a>
+      </div>
+      </div>
 
-</div>
 
 </section><!--end section 4-->
-
+<br>
 
 <div class = "row">
     <div class="large-5 columns"><p></p></div>
@@ -252,7 +296,9 @@ While dynamic updates ensures simple and secure bug fixes, security patching, an
       <p class="logo hide-for-small-only">snap</p> 
       <p class="footer-links">     
       <a href="https://github.com/intelsdi-x/snap"><i class="fa fa-github-square"></i></a>
-      <a href="https://gitter.im/intelsdi-x/snap">Gitter</a>
+      <a href="https://gitter.im/intelsdi-x/snap">gitter</a>
+      <a href="https://github.com/intelsdi-x/snap/blob/master/docs/PLUGIN_CATALOG.md">plugin catalog</a>
+      <a href ="https://github.com/intelsdi-x/snap#documentation">documentation</a>
 
       </p>
       
@@ -269,6 +315,24 @@ While dynamic updates ensures simple and secure bug fixes, security patching, an
 .center {
   text-align: center;
 }
+
+
+.button {
+  color: transparent;
+  font-size: 2rem;
+  letter-spacing: 5px;
+  border: 4px solid transparent;
+  border-image: linear-gradient(45deg, #737373, #737373);
+  border-image-slice: 1;
+  background: linear-gradient(45deg, #737373, #737373);
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  transition: all 0.2s ease; }
+  .button:hover {
+    border-image: linear-gradient(45deg, #737373, #737373);
+    background: linear-gradient(45deg, #737373, #737373); 
+}
+
 
 
 .top-bar {
